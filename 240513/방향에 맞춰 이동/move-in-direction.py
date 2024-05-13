@@ -8,16 +8,12 @@ for i in range(n):
     direction, step = input().split()
 
     if direction == "W":
-        for j in range(int(step)):
-            x, y = x + dx[2], y + dy[2]
+        x, y = x + dx[2]*int(step), y + dy[2]
     elif direction == "S":
-        for j in range(int(step)):
-            x, y = x + dx[1], y + dy[1]
+        x, y = x + dx[1], y + dy[1]*int(step)
     elif direction == "N":
-        for j in range(int(step)):
-            x, y = x + dx[3], y + dy[3]
+        x, y = x + dx[3], y + dy[3]*int(step)
     elif direction == "E":
-        for j in range(int(step)):
-            x, y = x + dx[0], y + dy[0]
+        x, y = x + dx[0]*int(step), y + dy[0]
 
 print(x, y)
