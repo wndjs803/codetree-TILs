@@ -28,6 +28,9 @@ for i in range(n):
         if(x == start_x and y == start_y):
             check = True
             break
+    
+    if check:
+        break
 
 if check:
     print(time)
