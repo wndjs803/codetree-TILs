@@ -14,6 +14,8 @@ start_x, start_y = 0, 0
 x, y = 0, 0
 
 time = 0
+check = False
+
 for i in range(n):
     direction, step = input().split()
 
@@ -24,5 +26,10 @@ for i in range(n):
         time += 1
 
         if(x == start_x and y == start_y):
-            print(time)
+            check = True
             break
+
+if check:
+    print(time)
+else:
+    print(-1)
