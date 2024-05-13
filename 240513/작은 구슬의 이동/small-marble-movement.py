@@ -20,7 +20,7 @@ for i in range(t):
     nx = x + dx[direction]
     ny = y + dy[direction]
     
-    if nx > 0 and nx < n and ny > 0 and ny < n:
+    if nx > 0 and nx <= n and ny > 0 and ny <= n:
         x, y = nx, ny
     else:
         direction = 3 - direction
