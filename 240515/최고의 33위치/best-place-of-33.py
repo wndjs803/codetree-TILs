@@ -4,10 +4,10 @@ arr = [list(map(int, input().split())) for _ in range(n)]
 
 grid = 3
 max_cnt = 0
-for i in range(n):
-    if i+3 > n: break
-    for j in range(n):
-        if j+3 > n: continue
+for i in range(n-2):
+    # if i+3 > n: break
+    for j in range(n-2):
+        # if j+3 > n: continue
         cnt = 0
         for k in range(i, i+3):
             for l in range(j, j+3):
