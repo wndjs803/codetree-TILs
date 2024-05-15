@@ -11,7 +11,7 @@ for i in range(n-2):
         cnt = 0
         for k in range(i, i+3):
             for l in range(j, j+3):
-                cnt += 1
+                cnt += arr[k][l]
         
         max_cnt = max(max_cnt, cnt)
 
