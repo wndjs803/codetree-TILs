@@ -22,7 +22,7 @@ while t:
     # print(t)
     for i in range(n):
         for j in range(n):
-            if count[i][j] == 1:
+            if count[i][j] >= 1:
                 cur_num = arr[i][j]
                 x, y = i, j
                 for k in range(4):
