@@ -17,10 +17,7 @@ dx = [-1, 1, 0, 0]
 dy = [0, 0, -1, 1]
 dir_num = 0
 change = True
-# print(count)
 while t:
-    print(t)
-    # print(count)
     for i in range(n):
         for j in range(n):
             if count[i][j] >= 1:
@@ -37,7 +34,6 @@ while t:
                             
                 next_count[x][y] += 1
                 next_count[i][j] -= 1
-                # print(next_count)
 
                             
 
@@ -53,13 +49,10 @@ while t:
                 count[i][j] = next_count[i][j]
                 change = True
 
-    # print(count)
-    # print(change)
     t -= 1
     if change == False: 
         break
 
-# print(count)
 result = 0
 for i in range(n):
     for j in range(n):
