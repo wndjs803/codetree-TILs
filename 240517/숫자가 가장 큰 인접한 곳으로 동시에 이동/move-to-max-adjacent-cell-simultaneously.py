@@ -19,11 +19,12 @@ dir_num = 0
 change = True
 # print(count)
 while t:
-    # print(t)
+    print(t)
+    # print(count)
     for i in range(n):
         for j in range(n):
             if count[i][j] >= 1:
-                cur_num = arr[i][j]
+                cur_num = -1
                 x, y = i, j
                 for k in range(4):
                     nx = i + dx[dir_num+k]
@@ -36,6 +37,8 @@ while t:
                             
                 next_count[x][y] += 1
                 next_count[i][j] -= 1
+                # print(next_count)
+
                             
 
     for i in range(n):
@@ -51,11 +54,12 @@ while t:
                 change = True
 
     # print(count)
-    
+    # print(change)
     t -= 1
     if change == False: 
         break
 
+# print(count)
 result = 0
 for i in range(n):
     for j in range(n):
