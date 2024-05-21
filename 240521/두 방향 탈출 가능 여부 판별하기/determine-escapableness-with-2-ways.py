@@ -16,17 +16,18 @@ def dfs(x, y):
     if x == n -1 and y == m - 1:
         check = 1
         return
-        
+
     for i in range(2):
         nx = x + dx[i]
         ny = y + dy[i]
         
         if nx >= 0 and nx < n and ny >= 0 and ny < m:
             if visited[nx][ny] == False and graph[nx][ny] == 1:
-                x, y = nx, ny
-                visited[x][y] = True
-                dfs(x, y)
+                visited[nx][ny] = True
+                dfs(nx, ny)
+         
 
+visited[0][0] = True
 dfs(0, 0)
 
 print(check)
