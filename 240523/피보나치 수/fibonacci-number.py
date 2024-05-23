@@ -16,5 +16,7 @@ def fibbo(n):
     else:
         dp[n] = fibbo(n -1) + fibbo(n-2)
 
+    return dp[n]
+
 fibbo(n)
 print(dp[n])
